@@ -35,5 +35,42 @@
         }
       }
     }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dcs-dev-15250-authRole",
+      "UnauthRoleArn": "arn:aws:iam::073086806852:role/amplify-dcs-dev-15250-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::073086806852:role/amplify-dcs-dev-15250-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-dcs-dev-15250-deployment",
+      "UnauthRoleName": "amplify-dcs-dev-15250-unauthRole",
+      "StackName": "amplify-dcs-dev-15250",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:073086806852:stack/amplify-dcs-dev-15250/35ec5830-4827-11ee-a3c0-0aab8283ace8",
+      "AmplifyAppId": "d1m4155fan2t3f"
+    },
+    "categories": {
+      "auth": {
+        "dcs573c9e4c": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1m4155fan2t3f",
+          "type": "cicd"
+        }
+      },
+      "storage": {
+        "dcs772984af": {
+          "bucketName": "smartbabybed",
+          "region": "ap-southeast-2"
+        },
+        "videoresource": {
+          "tableName": "video_resource",
+          "region": "ap-southeast-2",
+          "arn": "arn:aws:dynamodb:ap-southeast-2:073086806852:table/video_resource",
+          "partitionKeyName": "resource_id",
+          "partitionKeyType": "S"
+        }
+      }
+    }
   }
 }
