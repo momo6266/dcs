@@ -24,6 +24,12 @@
           "partitionKeyName": "resource_id",
           "partitionKeyType": "S"
         }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3v2f4hp61s1ky",
+          "type": "cicd"
+        }
       }
     }
   }
