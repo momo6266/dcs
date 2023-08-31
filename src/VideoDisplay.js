@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Auth, API, graphqlOperation } from 'aws-amplify';
 import { listVideoResources } from './graphql/queries';
-import './VideoDisplay.css'; // Import your custom CSS file
+import './VideoDisplay.css';
 
 function VideoDisplay() {
   const [videos, setVideos] = useState([]);
-  const [userId, setUserId] = useState('');
 
   useEffect(() => {
     async function fetchVideos() {
       try {
         const user = await Auth.currentAuthenticatedUser();
-        setUserId(user.attributes.sub);
 
         const response = await API.graphql(graphqlOperation(listVideoResources, {
           filter: {
@@ -42,7 +40,6 @@ function VideoDisplay() {
   return (
     <div className="video-display-container">
       <h2>Video Resources</h2>
-      <button onClick={handleSignOut}>Sign Out</button>
       <div className="video-list">
         {videos.map(video => (
           <div key={video.resource_id} className="video-item">
@@ -53,6 +50,10 @@ function VideoDisplay() {
             <div className="video-event-time">{video.EventTime}</div>
           </div>
         ))}
+      </div>
+      <div className="bottom-bar">
+        <button onClick={handleSignOut}>Sign Out</button>
+        <p>&copy; Smart Baby Cot</p>
       </div>
     </div>
   );

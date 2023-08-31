@@ -6,16 +6,13 @@ import VideoDisplay from './VideoDisplay';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header className="app-header">
         <h1>Smart Baby Cot</h1>
       </header>
-      <main className="App-main">
+      <main className="app-main">
         <VideoDisplay />
       </main>
-      <footer className="App-footer">
-        <p>&copy; {new Date().getFullYear()} Smart Baby Cot</p>
-      </footer>
     </div>
   );
 }
