@@ -1,0 +1,27 @@
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-item video {
+  width: 100%;
+  height: auto;
+  max-height: 180px; /* Set the maximum height for the video thumbnail */
+}
+
+.video-event-time {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #666;
+}

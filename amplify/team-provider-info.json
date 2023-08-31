@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dcs-dev-235207-authRole",
+      "UnauthRoleArn": "arn:aws:iam::073086806852:role/amplify-dcs-dev-235207-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::073086806852:role/amplify-dcs-dev-235207-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-dcs-dev-235207-deployment",
+      "UnauthRoleName": "amplify-dcs-dev-235207-unauthRole",
+      "StackName": "amplify-dcs-dev-235207",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:073086806852:stack/amplify-dcs-dev-235207/d96850f0-45ba-11ee-8ae1-0ab22e2dcf8a",
+      "AmplifyAppId": "d3v2f4hp61s1ky"
+    },
+    "categories": {
+      "auth": {
+        "dcs615f144a": {},
+        "dcsc28e1954": {}
+      },
+      "storage": {
+        "videoresource": {
+          "tableName": "video_resource",
+          "region": "ap-southeast-2",
+          "arn": "arn:aws:dynamodb:ap-southeast-2:073086806852:table/video_resource",
+          "partitionKeyName": "resource_id",
+          "partitionKeyType": "S"
+        }
+      }
+    }
+  }
+}
