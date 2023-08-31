@@ -1,7 +1,7 @@
 {
   "api": {},
   "auth": {
-    "dcsc28e1954": {
+    "dcs573c9e4c": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -30,7 +30,6 @@
   },
   "hosting": {
     "amplifyhosting": {
-      "lastPushTimeStamp": "2023-08-31T13:29:40.185Z",
       "service": "amplifyhosting",
       "type": "cicd"
     }
@@ -49,6 +48,22 @@
         {
           "category": "hosting",
           "resourceName": "amplifyhosting"
+        }
+      ]
+    },
+    "AMPLIFY_storage_dcs772984af_bucketName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "dcs772984af"
+        }
+      ]
+    },
+    "AMPLIFY_storage_dcs772984af_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "dcs772984af"
         }
       ]
     },
@@ -94,6 +109,12 @@
     }
   },
   "storage": {
+    "dcs772984af": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "serviceType": "imported"
+    },
     "videoresource": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
