@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Auth, API, graphqlOperation } from 'aws-amplify';
 import { listVideoResources } from './graphql/queries';
+import { Link } from 'react-router-dom';
 import './VideoDisplay.css';
 
 function VideoDisplay() {
@@ -53,6 +54,7 @@ function VideoDisplay() {
       </div>
       <div className="bottom-bar">
         <button onClick={handleSignOut}>Sign Out</button>
+        <Link to="/quicksight">Go to QuickSight</Link> {/* Link to QuickSight */}
         <p>&copy; Smart Baby Cot</p>
       </div>
     </div>

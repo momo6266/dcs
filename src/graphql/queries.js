@@ -37,3 +37,32 @@ export const listVideoResources = /* GraphQL */ `
     }
   }
 `;
+export const getGraphResource = /* GraphQL */ `
+  query GetGraphResource($resource_id: String!) {
+    getGraphResource(resource_id: $resource_id) {
+      resource_id
+      Bucket
+      EventTime
+      Object
+      objectURL
+      UserID
+      __typename
+    }
+  }
+`;
+export const listGraphResources = /* GraphQL */ `
+query ListGraphResources($filter: TableGraphResourceFilterInput, $limit: Int, $nextToken: String) {
+  listGraphResources(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      resource_id
+      Bucket
+      EventTime
+      Object
+      objectURL
+      UserID
+    }
+    nextToken
+  }
+}
+
+`;

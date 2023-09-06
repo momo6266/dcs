@@ -1,0 +1,54 @@
+.quick-sight-container {
+    text-align: center; /* Center-align the content in the container */
+  }
+  
+  .quick-sight-container h2 {
+    margin-bottom: 20px; /* Add some spacing below the heading */
+  }
+  
+  .graph-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-item img {
+    width: auto; /* Allow the image to expand */
+    height: auto; /* Allow the image to expand */
+    max-width: 100%; /* Ensure the image does not exceed the screen width */
+    max-height: 80vh; /* Set the maximum height relative to the viewport height */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  .graph-event-time {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bottom-bar button {
+    margin-right: 10px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    color: #666;
+  }
+  

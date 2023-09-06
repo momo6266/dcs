@@ -43,3 +43,42 @@ export const deleteVideoResource = /* GraphQL */ `
     }
   }
 `;
+export const createGraphResource = /* GraphQL */ `
+  mutation CreateGraphResource($input: CreateGraphResourceInput!) {
+    createGraphResource(input: $input) {
+      resource_id
+      Bucket
+      EventTime
+      Object
+      objectURL
+      UserID
+      __typename
+    }
+  }
+`;
+export const updateGraphResource = /* GraphQL */ `
+  mutation UpdateGraphResource($input: UpdateGraphResourceInput!) {
+    updateGraphResource(input: $input) {
+      resource_id
+      Bucket
+      EventTime
+      Object
+      objectURL
+      UserID
+      __typename
+    }
+  }
+`;
+export const deleteGraphResource = /* GraphQL */ `
+  mutation DeleteGraphResource($input: DeleteGraphResourceInput!) {
+    deleteGraphResource(input: $input) {
+      resource_id
+      Bucket
+      EventTime
+      Object
+      objectURL
+      UserID
+      __typename
+    }
+  }
+`;
